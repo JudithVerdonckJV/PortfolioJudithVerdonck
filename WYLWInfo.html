@@ -1,0 +1,83 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>What's your life worth project info'</title>
+
+    <link rel="stylesheet" href="PortfolioStylesheet.css">
+</head>
+<body>
+    <div class="HeaderBlock">
+        <h1 class="HeaderTitle">What's your life worth?</h1>
+        <h3>Game</h3>
+    </div>
+
+    <div class="ButtonRibbon" id="StickyRibbon">
+        <div class="ButtonAlignment">
+            <button id="PortfolioButton">Portfolio</button>
+            <button id="AboutMeButton">About me</button>
+        </div>
+    </div>
+
+    <div class="ProjectContainer">
+        <div class="ProjectInfoContainer">
+            <div class="VideoContainer">
+                <iframe class="Video" src="https://www.youtube.com/watch?v=aK0Fi9hLEtE"></iframe>
+            </div>
+
+            <div class="TextContainer">
+                <h4>The project</h4>
+                <p>
+                    One of the courses at DAE puts us together with four to five other students in order to make a game. We get nothing except deadlines and a very wide restriction
+                    (like "co-op", "twinstick", ...), the rest is up to us.<br />
+                    Our group consisted of two programmers, counting myself, and three artists:
+                    <ul>
+                        <li>Tom Kalders, programmer</li>
+                        <li>Tatiana Devos, artist</li>
+                        <li>Lars Korden, artist</li>
+                        <li>María Martínez, artist</li>
+                    </ul>
+                    The restriction was that the game needed to be playable on an arcade machine, having one stick and four buttons.<br />
+                    After brainstorming, we had a good grasp on what we wanted to do, and immediatly we were faced with a few coding challenges in the very foundation of our game mechanics,
+                    most of which I tackled.<br />
+                    This project was not my first time using Unreal Engine, but it was the first time using c++ in Unreal. It made for a slow start, but we quickly adapted.
+                </p>
+
+                <h4>My part</h4>
+                <p>
+                    The first problem we had to solve, was the gravity. Unreal's gravity points down over the z-axis, while we had a spherical world. This meant we had to have gravity pointing to an
+                    arbitrary point. After some trial-and-error, I quite easily could make the player fall into the right direction. The gravity I made is not physically correct - there is no acceleration
+                    for example - because in this game, this kind of  accuracy was not needed.<br />
+                    The second, way bigger problem, was making our planet consist out of tiles that each had their own bit of code. In other words, in order to not have to painstakingly place all of the tiles
+                    by hand, they somehow needed to be generated in place. While the code that solved this particular problem isn't complex, there was quite a bit of research and testing involved.
+                    Once I found the right kind of geometry - a sphere that was triangulated, with each triangle being the exact same -, the biggest hurdle had been taken. What was left was for a generator class
+                    to choose the biome of each tile and keep track of all of them - as the tiles also had to be able to break, give valid pointers in order to spawn enemies and camp etc.
+                </p>
+                <p>
+                    The other things that were my responsibility, were making all the enemies and getting the animation blueprints up and running for <em>everything</em>, as I was the only one with any experience
+                    with Unreal's animation system. In the end, I also did part of the UI (mostly the menu's), as we were running out of time.<br />
+                    While not related to coding in particular, I wrote all of the devlogs on the Itch.io page.
+                </p>
+
+                <h4>Links</h4>
+                <p>
+                    The <a href="https://blacksilverfox.itch.io/whats-your-life-worth" target="_blank">Itch.io</a> page of the game.<br />
+                </p>
+            </div>
+        </div>
+
+        <div class="ProjectImageContainerFlex">
+            <div class="ProjectImageContainer">
+                <img class="ProjectImage" src="Images/WYLW_0.png" alt="What's your life worth? screenshot 0" />
+                <img class="ProjectImage" src="Images/WYLW_1.png" alt="What's your life worth? screenshot 1" />
+                <img class="ProjectImage" src="Images/WYLW_2.png" alt="What's your life worth? screenshot 2" />
+                <img class="ProjectImage" src="Images/WYLW_3.png" alt="What's your life worth? screenshot 3" />
+                <img class="ProjectImage" src="Images/WYLW_4.png" alt="What's your life worth? screenshot 4" />
+            </div>
+        </div>
+    </div>
+
+    <script src="PortfolioScript.js"></script>
+</body>
+</html>

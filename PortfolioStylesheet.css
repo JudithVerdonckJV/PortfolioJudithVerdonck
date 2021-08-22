@@ -1,0 +1,202 @@
+﻿body {
+    background-image: url("Images/Background.jpg");
+    /*background image source: https://wallpaperaccess.com/white-network */
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center center;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    font-family: "Calibri", sans-serif;
+    font-size: 110%;
+    color: rgb(20, 20, 20);
+}
+
+h1 {
+    color: white;
+    font-size: 5em;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 0;
+}
+
+h2 {
+    color: rgb(20, 20, 20);
+    font-size: 2.3em;
+    text-transform: uppercase;
+    text-align: left;
+    margin: 0;
+}
+
+h3 {
+    color: white;
+    font-size: 1.8em;
+    text-align: center;
+    margin: 0;
+}
+
+h4 {
+    color: rgb(20, 20, 20);
+    font-size: 2.0em;
+    text-align: left;
+    margin: 5px 0px 5px 0px;
+}
+
+button {
+    width: 120px;
+    height: 40px;
+    background-color: rgb(128 128 128);
+    border: none;
+    float: left;
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 1em;
+    transition-duration: 0.4s;
+    letter-spacing: 1px;
+}
+
+button:hover, button:focus {
+    background-color: rgb(40,40,40);
+}
+
+a {
+    color: rgb(128 128 128);
+    font-weight: bold;
+    text-decoration-line: underline;
+}
+
+a:visited {
+    color: rgb(20,20,20);
+    font-weight: bold;
+    text-decoration-line: underline;
+}
+
+a:hover, a:focus {
+    color: rgb(40,40,40);
+    font-weight: bold;
+    text-decoration-line: underline;
+}
+
+.HeaderBlock {
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: rgb(40,40,40);
+}
+
+.Sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.ButtonRibbon {
+    background-color: rgb(128 128 128);
+    width: 100%;
+    height: 40px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.ButtonAlignment {
+    margin: auto;
+    width: max-content;
+}
+
+.PortfolioContainer {
+    background-color: rgba(255, 255, 255, 0.5);
+    width: 70%;
+    margin: auto;
+    margin-top: 40px;
+    padding: 20px 20px 20px 20px;
+    border-radius: 8px;
+}
+
+.PortfolioContainer:hover, .PortfolioContainer:focus {
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+.PortfolioImage {
+    float: left;
+    margin-right: 20px;
+    border-radius: 8px;
+    width: 40%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.EngineLogo {
+    float: right;
+    width: 5%;
+}
+
+
+
+/*PROJECT*/
+.ProjectContainer {
+    background-color: rgba(255, 255, 255, 0.9);
+    width: 70%;
+    margin: auto;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    border-radius: 8px;
+}
+
+
+
+.ProjectImageContainerFlex{
+    float: right;
+    width: 40%;
+}
+
+.ProjectImageContainer {
+    margin-top: 40px;
+    margin-right: min(40px, 5%);
+    margin-bottom: min(40px, 5%);
+}
+
+.ProjectImage {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+
+.ProjectInfoContainer{
+    float: left;
+    width: 60%;
+}
+
+.VideoContainer
+{
+    width: 80%;
+    margin: auto;
+    margin-top: min(40px, 5%);
+}
+
+.Video
+{
+    width: 100%;
+}
+
+.TextContainer {
+    width: 85%;
+    margin: auto;
+    margin-top: min(20px, 5%);
+    margin-bottom: min(40px, 5%);
+}
+
+@media (max-width: 1000px) {
+    .ProjectInfoContainer {
+        width: 100%;
+    }
+
+    .ProjectImageContainerFlex {
+        width: 100%;
+    }
+
+    .ProjectImageContainer {
+        margin-left: min(20px, 5%);
+    }
+}
