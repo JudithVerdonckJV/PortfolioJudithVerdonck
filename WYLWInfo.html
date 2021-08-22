@@ -29,35 +29,17 @@
             <div class="TextContainer">
                 <h4>The project</h4>
                 <p>
-                    One of the courses at DAE puts us together with four to five other students in order to make a game. We get nothing except deadlines and a very wide restriction
-                    (like "co-op", "twinstick", ...), the rest is up to us.<br />
-                    Our group consisted of two programmers, counting myself, and three artists:
-                    <ul>
-                        <li>Tom Kalders, programmer</li>
-                        <li>Tatiana Devos, artist</li>
-                        <li>Lars Korden, artist</li>
-                        <li>María Martínez, artist</li>
-                    </ul>
-                    The restriction was that the game needed to be playable on an arcade machine, having one stick and four buttons.<br />
-                    After brainstorming, we had a good grasp on what we wanted to do, and immediatly we were faced with a few coding challenges in the very foundation of our game mechanics,
-                    most of which I tackled.<br />
-                    This project was not my first time using Unreal Engine, but it was the first time using c++ in Unreal. It made for a slow start, but we quickly adapted.
+                    Being an assignment for Game Mechanics, we had six weeks time to start from 2 random words and end with a small game. There were no restrictions on genre,
+                    we had to use Unity, and we worked alone on the project.<br/>
+                    The game I created, <em>What's your life worth</em>, is a bullethell about an adventurer finding a magic bow and fighting his way to the end of a dungeon.
+                    While the project I managed to make in those six weeks only contains a few chambers, the base idea is there - the player can upgrade his bow in every room, at the cost of some hp.
+                    You can also choose to heal, but then you lose the opportunity on an upgrade that might be the difference between life and death in the next room. That way, I tried to create
+                    a choice that's more then a mindless click on the "upgrade" button.<br/>
                 </p>
 
-                <h4>My part</h4>
+                <h4>A learning process</h4>
                 <p>
-                    The first problem we had to solve, was the gravity. Unreal's gravity points down over the z-axis, while we had a spherical world. This meant we had to have gravity pointing to an
-                    arbitrary point. After some trial-and-error, I quite easily could make the player fall into the right direction. The gravity I made is not physically correct - there is no acceleration
-                    for example - because in this game, this kind of  accuracy was not needed.<br />
-                    The second, way bigger problem, was making our planet consist out of tiles that each had their own bit of code. In other words, in order to not have to painstakingly place all of the tiles
-                    by hand, they somehow needed to be generated in place. While the code that solved this particular problem isn't complex, there was quite a bit of research and testing involved.
-                    Once I found the right kind of geometry - a sphere that was triangulated, with each triangle being the exact same -, the biggest hurdle had been taken. What was left was for a generator class
-                    to choose the biome of each tile and keep track of all of them - as the tiles also had to be able to break, give valid pointers in order to spawn enemies and camp etc.
-                </p>
-                <p>
-                    The other things that were my responsibility, were making all the enemies and getting the animation blueprints up and running for <em>everything</em>, as I was the only one with any experience
-                    with Unreal's animation system. In the end, I also did part of the UI (mostly the menu's), as we were running out of time.<br />
-                    While not related to coding in particular, I wrote all of the devlogs on the Itch.io page.
+
                 </p>
 
                 <h4>Links</h4>
