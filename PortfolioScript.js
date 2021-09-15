@@ -27,6 +27,9 @@ if (CAInfo != null) CAInfo.onclick = OpenCAInfo;
 var WritingInfo = document.getElementById("Writing");
 if (WritingInfo != null) WritingInfo.onclick = OpenWritingInfo;
 
+var ArtInfo = document.getElementById("Art");
+if (ArtInfo != null) ArtInfo.onclick = Open3dInfo;
+
 function OpenAPOPInfo() {
     window.open("APOPInfo.html", "_self");
 }
@@ -41,6 +44,10 @@ function OpenCAInfo() {
 
 function OpenWritingInfo() {
     window.open("WritingInfo.html", "_self");
+}
+
+function Open3dInfo() {
+    window.open("3dWorkflowsInfo.html", "_self");
 }
 
 /*BUTTONS*/
