@@ -60,6 +60,7 @@ button {
 
 button:hover, button:focus {
     background-color: rgb(40,40,40);
+    cursor: pointer;
 }
 
 a {
@@ -116,6 +117,7 @@ a:hover, a:focus {
 
 .PortfolioContainer:hover, .PortfolioContainer:focus {
     background-color: rgba(255, 255, 255, 0.9);
+    cursor: pointer;
 }
 
 .PortfolioImage {
@@ -123,6 +125,7 @@ a:hover, a:focus {
     margin-right: 20px;
     border-radius: 8px;
     width: 40%;
+    max-height: 300px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
@@ -143,8 +146,6 @@ a:hover, a:focus {
     border-radius: 8px;
 }
 
-
-
 .ProjectImageContainerFlex{
     float: right;
     width: 40%;
@@ -163,7 +164,7 @@ a:hover, a:focus {
 }
 
 
-.ProjectInfoContainer{
+.ProjectInfoContainer {
     float: left;
     width: 60%;
 }
@@ -183,7 +184,7 @@ a:hover, a:focus {
 .TextContainer {
     width: 85%;
     margin: auto;
-    margin-top: min(20px, 5%);
+    margin-top: min(40px, 5%);
     margin-bottom: min(40px, 5%);
 }
 

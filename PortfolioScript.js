@@ -24,6 +24,9 @@ if (WYLWInfo != null) WYLWInfo.onclick = OpenWYLWInfo;
 var CAInfo = document.getElementById("CA");
 if (CAInfo != null) CAInfo.onclick = OpenCAInfo;
 
+var WritingInfo = document.getElementById("Writing");
+if (WritingInfo != null) WritingInfo.onclick = OpenWritingInfo;
+
 function OpenAPOPInfo() {
     window.open("APOPInfo.html", "_self");
 }
@@ -33,7 +36,11 @@ function OpenWYLWInfo() {
 }
 
 function OpenCAInfo() {
+    window.open("ACInfo.html", "_self");
+}
 
+function OpenWritingInfo() {
+    window.open("WritingInfo.html", "_self");
 }
 
 /*BUTTONS*/
