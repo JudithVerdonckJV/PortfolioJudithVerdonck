@@ -58,7 +58,7 @@ var AboutMeButton = document.getElementById("AboutMeButton");
 if (AboutMeButton != null) AboutMeButton.onclick = OpenAboutMe;
 
 function OpenPortfolio() {
-    window.open("PortfolioHomepage.html", "_self");
+    window.open("index.html", "_self");
 }
 
 function OpenAboutMe() {
