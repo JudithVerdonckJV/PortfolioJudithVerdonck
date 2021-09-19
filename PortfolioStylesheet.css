@@ -188,6 +188,12 @@ a:hover, a:focus {
     margin-bottom: min(40px, 5%);
 }
 
+.PdfViewer {
+    width: 100%;
+    min-height: 1455px;
+    margin-bottom: min(40px, 5%);
+}
+
 @media (max-width: 1000px) {
     .ProjectInfoContainer {
         width: 100%;

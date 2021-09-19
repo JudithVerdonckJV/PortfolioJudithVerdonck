@@ -51,8 +51,16 @@ function Open3dInfo() {
 }
 
 /*BUTTONS*/
-document.getElementById("PortfolioButton").onclick = OpenPortfolio;
+var PortfolioButton = document.getElementById("PortfolioButton");
+if (PortfolioButton != null) PortfolioButton.onclick = OpenPortfolio;
+
+var AboutMeButton = document.getElementById("AboutMeButton");
+if (AboutMeButton != null) AboutMeButton.onclick = OpenAboutMe;
 
 function OpenPortfolio() {
     window.open("PortfolioHomepage.html", "_self");
+}
+
+function OpenAboutMe() {
+    window.open("ResumeInfo.html", "_self");
 }
