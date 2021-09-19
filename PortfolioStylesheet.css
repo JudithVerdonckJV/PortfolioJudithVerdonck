@@ -179,6 +179,7 @@ a:hover, a:focus {
 .Video
 {
     width: 100%;
+    height: 360px;
 }
 
 .TextContainer {
