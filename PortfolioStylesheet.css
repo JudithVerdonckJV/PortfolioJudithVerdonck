@@ -81,6 +81,10 @@ a:hover, a:focus {
     text-decoration-line: underline;
 }
 
+ul {
+    list-style-position: inside;
+}
+
 .HeaderBlock {
     width: 100%;
     padding-top: 20px;
