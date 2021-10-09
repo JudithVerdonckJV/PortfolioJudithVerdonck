@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+﻿ <!DOCTYPE html>
 
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -34,36 +34,52 @@
                     Our group consisted of two programmers, counting myself, and three artists:
                     <ul>
                         <li>Myself; Judith Verdonck, programmer</li>
-                        <li>Tom Kalders, programmer</li>
-                        <li>Tatiana Devos, artist</li>
-                        <li>Lars Korden, artist</li>
-                        <li>María Martínez, artist</li>
+                        <li><a href="https://tomkalders.github.io/index.html" target="_blank">Tom Kalders</a>, programmer</li>
+                        <li><a href="https://www.artstation.com/hasu" target="_blank">Tatiana Devos</a>, artist</li>
+                        <li><a href="https://www.artstation.com/lark_art" target="_blank">Lars Korden</a>, artist</li>
+                        <li><a href="https://www.artstation.com/maramt95" target="_blank">María Martínez</a>, artist</li>
                     </ul>
                     After brainstorming, we had a good grasp on what we wanted to do, and we were immediatly faced with a few coding challenges in the very foundation of our game mechanics,
                     most of which I tackled.<br />
                     This project was not my first time using Unreal Engine, but it was the <b>first time using c++ in Unreal</b>. It made for a slow start, but we quickly adapted.
                 </p>
 
-                <h4>My part</h4>
+                <h4>Contribution</h4>
+                
+                <h5>Programming</h5>
                 <p>
                     The first problem we had to solve, was the gravity. Unreal's gravity points down over the z-axis, while we had a spherical world. This meant we had to have <b>gravity pointing to an
                     arbitrary point</b>. The gravity I made is not physically correct - there is no acceleration for example - because in this game, that kind of  accuracy was not needed.<br />
-                    The second, way bigger problem, was making our <b>planet consist out of destuctible tiles</b>, each with their own bit of code. In other words, in order to not have to painstakingly place all of the tiles
-                    by hand, they somehow needed to be <b>generated in place</b>. While the code that solved this particular problem isn't complex, there was quite a bit of research and testing involved.
+                    The second, way bigger problem, was making our <b>planet consist out of destuctible tiles</b>, each with their own bit of code. In other words, in order to not have to painstakingly
+                    place all of the tiles by hand, they somehow needed to be <b>generated in place</b>. While the code that solved this particular problem isn't complex, there was quite a bit of
+                    research and testing involved.
                 </p>
+                <img class="ProjectImage" src="Images/APOP_Code01.png" alt="Code snippet: generation setup." />
+                <img class="ProjectImage" src="Images/APOP_Code02.png" alt="Code snippet: generation." />
                 <p>
                     My other responsibilities were making all the <b>enemy classes</b> and getting the <b>animation blueprints</b> up and running for <em>everything</em>, as I was the only one with any experience
-                    with Unreal's animation system. In the end, I also did part of the UI (mostly the menu's), as we were running out of time.<br />
-                    While not related to coding in particular, I wrote all of the <b>devlogs</b> on the Itch.io page.
+                    with Unreal's animation system. In the end, I also did part of the UI (mostly the menu's), as we were running out of time.
                 </p>
-
+                
+                <h5>Design</h5>
+                <p>
+                    Coming up with the idea for the game was something we did in group, but as I took up the lead, I was often the one to either <b>spark discussion, or make final decisions</b>.
+                    An example of this would be the <b>destructible tiles</b>. As we were working in a rather small playfield (after settling on the planet-theme), I thought it would be nice if this
+                    environment itself would be a game mechanics factor. Someone came up with the idea of biomes, which ended up as the Tundra, Forest and Desert tiles, and I came up with the idea of
+                    having the planet be destructible. Of course, it is not as clear cut as that - these ideas grow very organically and often receive input and changes from all sides. Still, the base
+                    comes from somewhere, and I can confidently say I have played a big role in how that base was build up.
+                </p>
+                
+                <h5>Other</h5>
+                <p>
+                    I took up the responsibility of writing the weekly devlogs. While it sometimes was hard to properly word what the artists had done, as I had a less complete view on their struggles and
+                    tests, I had a lot of fun telling all the ups and downs we went through as a team.
+                </p>
+                
                 <h4>Links</h4>
                 <p>
                     The <a href="https://tatianadevos.itch.io/apieceofplanet" target="_blank">Itch.io</a> page of the game.<br />
-                    <br/>
-                    Tatiana's <a href="https://www.artstation.com/hasu" target="_blank">portfolio</a>.<br />
-                    María's <a href="https://www.artstation.com/maramt95" target="_blank">portfolio</a>.<br />
-                    Lars' <a href="https://www.artstation.com/lark_art" target="_blank">portfolio</a>.
+                    A <a href="https://github.com/JudithVerdonckJV/APieceOfPlanet" target="_blank">Github repository</a> containing the code files I worked on the most.
                 </p>
             </div>
         </div>
