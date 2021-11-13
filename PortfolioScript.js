@@ -15,6 +15,9 @@ function HandleStickyRibbon() {
 
 
 /*PROJECTS*/
+var WIPInfo = document.getElementById("WIP");
+if (WIPInfo != null) WIPInfo.onclick = OpenWIPInfo;
+
 var APOPInfo = document.getElementById("APOP");
 if (APOPInfo != null) APOPInfo.onclick = OpenAPOPInfo;
 
@@ -29,6 +32,10 @@ if (WritingInfo != null) WritingInfo.onclick = OpenWritingInfo;
 
 var ArtInfo = document.getElementById("Art");
 if (ArtInfo != null) ArtInfo.onclick = Open3dInfo;
+
+function OpenWIPInfo() {
+    window.open("WIPInfo.html", "_self");
+}
 
 function OpenAPOPInfo() {
     window.open("APOPInfo.html", "_self");
