@@ -1,0 +1,112 @@
+﻿ <!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Curse of the Pyramid project info</title>
+
+    <link rel="stylesheet" href="PortfolioStylesheet.css">
+</head>
+<body>
+    <div class="HeaderBlock">
+        <h1 class="HeaderTitle">Curse of the Pyramid</h1>
+        <h3>Groupproject</h3>
+    </div>
+
+    <div class="ButtonRibbon" id="StickyRibbon">
+        <div class="ButtonAlignment">
+            <button id="PortfolioButton">Portfolio</button>
+            <button id="AboutMeButton">About me</button>
+        </div>
+    </div>
+
+    <div class="ProjectContainer">
+        <div class="ProjectInfoContainer">
+            <div class="VideoContainer">
+                <iframe class="Video" src="https://www.youtube.com/embed/us-wrjvyLB4"></iframe>
+            </div>
+
+            <div class="TextContainer">
+                <h4>The project</h4>
+                <p>
+                    As a final test before doing our internship, we do one more groupproject, much larger than any other project we have done before in our studies at DAE. During summer, we are given the
+                    choice to either start on our <b>own prototype</b>, which we then present to a <b>jury</b> that decides if we can keep working on it; or we wait untill the start of the academic year to choose a
+                    project from a list given to us by school. I teamed up during summer with the people listed below.
+                    <ul>
+                        <li>Myself; Judith Verdonck (Gameplay, AI, Optimization).</li>
+                        <li><a href="https://enriquebrosse.myportfolio.com/" target="_blank">Enrique Brossé</a> (Back-end, Tool, Optimization).</li>
+                        <li><a href="https://www.artstation.com/gomorrahdotd" target="_blank">Steven Serra Mock</a> (Director, Main Game Design, LookDev, Tech Art,  Character, VFX, SFX, Soundtrack-Composition).</li>
+                        <li><a href="https://www.artstation.com/silkevandersmissen" target="_blank">Silke Van Der Smissen</a> (Environment, Prop, LookDev, Tech Art, Lighting).</li>
+                        <li><a href="https://www.artstation.com/bentehuhh" target="_blank">Bente Schoone</a> (Character, Rigging, Animation, UI, Prop, Cinematography).</li>
+                    </ul>
+                    We succeeded in convincing the jury and were able to work fulltime on our game "Curse of the Pyramid".<br />
+
+                    The game follows a young archaeologist, who encounters a strange creature asking for help. She brings the player to a hidden pyramid, where her friend got lost.
+                    The player then proceeds to fight their way through the pyramid in a <b>mix of hack and slash, dungeoncrawler, bullethell and roguelike</b>. An artefact makes it possible to go in and out
+                    of the soulworld, which forms the base for many of the mechanics in the game.
+                </p>
+
+                <h4>Contribution</h4>
+
+                <h5>Design</h5>
+                <p>
+                    This time, the idea came from student Steven, who took up the role of project lead. He was the one who had the last word and took final decisions. However, that did not mean he
+                    was not open for discussion, and especially during the first few weeks, a lot of <b>game mechanics and story elements have been adapted and changed during such discussions</b>.
+                    The whole group took part in these discussions.
+                </p>
+
+                <h5>Programming</h5>
+                <p>
+                    I focused mainly on <b>player and enemies</b>. The player needed to be able to switch from normal world to soul world and back, having <b>different attacks in each world</b>. Damage
+                    needed to be calculated depending on several factors, and mainly for the player, sometimes different behavior was to be attached to taking damage. For example, the soul had to
+                    snap back to the body whenever the body was hit.
+                </p>
+                    <img class="ProjectImage" src="Images/CotP_Code0.png" alt="Curse of the Pyramid Code snippet 0" />
+                <p>
+                    <b>Enemies needed to be as modular as possible</b>, as the ultimate goal is to have many different creatures and monsters. In the
+                    demo project, there are creatures and two bullethell spawners. The creatures are derived from the same class, and the spawners are also based on one class.<br />
+                    I also made the <b>AI for the enemies</b>, using Unreal Engine's behavior tree system. I had a lot of fun making a <b>normal and aggressive variant</b>, where the aggressive variant would be able
+                    to jump over gaps using a new attack. To differentiate even more between the types of enemies, I worked out how to use <b>UE's navigation system more in-depth</b>, as some had to be able to
+                    float over gaps, while others shouldn't be able to do so. <br />
+                    To keep modularity as high as possible, weapons, attack components, dodge components etc. are all different classes that are capable of working together. Usually, UE4's data assets
+                    where used to feed all necessary info into classes.
+                </p>
+                    <img class="ProjectImage" src="Images/CotP_Code1.png" alt="Curse of the Pyramid Code snippet 0" />
+                <p>
+                    Together with the player and enemy classes, I was busy setting up their <b>animation state machines</b>.
+                </p>
+
+                <h5>Writing</h5>
+                <p>
+                    While there is not much dialogue in the game just yet, I did write the <b>dialogue during the tutorial</b> and the hints on the puzzle stones in the dungeon. The ultimate goal is
+                    to have a system where every run will give some different dialogue, and reaching important milestones will give you a new part of the story. However, with just three months time,
+                    this is something for the future.
+                </p>
+
+                <h4>Future</h4>
+                <p>
+                    Right now, Curse of the Pyramid is pretty much a demo. In three months time, we have been able to do an incredible amount of work, but the game is not done yet. However, the team is
+                    motivated to keep working on the project during free time and is looking for opportunities to work on it fulltime. Who knows, maybe in a few years we will have bossfights, multiple
+                    dungeons, multiple dungeon layers...
+                </p>
+
+                <h4>Links</h4>
+                <p>
+                    The <a href="https://gomorrah-dotd.itch.io/curse-of-the-pyramid" target="_blank">Itch.io</a> page of the game.<br />
+                </p>
+            </div>
+        </div>
+
+        <div class="ProjectImageContainerFlex">
+            <div class="ProjectImageContainer">
+                <img class="ProjectImage" src="Images/CotP_0.jpg" alt="Curse of the Pyramid Screenshot 0" />
+                <img class="ProjectImage" src="Images/CotP_1.jpg" alt="Curse of the Pyramid Screenshot 1" />
+                <img class="ProjectImage" src="Images/CotP_2.jpg" alt="Curse of the Pyramid Screenshot 2" />
+                <img class="ProjectImage" src="Images/CotP_3.jpg" alt="Curse of the Pyramid Screenshot 3" />
+            </div>
+        </div>
+    </div>
+
+    <script src="PortfolioScript.js"></script>
+</body>
+</html>

@@ -18,6 +18,9 @@ function HandleStickyRibbon() {
 var WIPInfo = document.getElementById("WIP");
 if (WIPInfo != null) WIPInfo.onclick = OpenWIPInfo;
 
+var CotPInfo = document.getElementById("CotP");
+if (CotPInfo != null) CotPInfo.onclick = OpenCotpInfo;
+
 var APOPInfo = document.getElementById("APOP");
 if (APOPInfo != null) APOPInfo.onclick = OpenAPOPInfo;
 
@@ -35,6 +38,10 @@ if (ArtInfo != null) ArtInfo.onclick = Open3dInfo;
 
 function OpenWIPInfo() {
     window.open("WIPInfo.html", "_self");
+}
+
+function OpenCotpInfo() {
+    window.open("CotPInfo.html", "_self");
 }
 
 function OpenAPOPInfo() {
