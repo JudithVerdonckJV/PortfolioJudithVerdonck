@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Graduation work project info</title>
+
+    <link rel="stylesheet" href="PortfolioStylesheet.css">
+</head>
+<body>
+    <div class="HeaderBlock">
+        <h1 class="HeaderTitle">Forest Fire simulator</h1>
+        <h3>Graduation work</h3>
+    </div>
+
+    <div class="ButtonRibbon" id="StickyRibbon">
+        <div class="ButtonAlignment">
+            <button id="PortfolioButton">Portfolio</button>
+            <button id="AboutMeButton">About me</button>
+        </div>
+    </div>
+
+    <div class="ProjectContainer">
+        <div class="ProjectInfoContainer">
+            <div class="VideoContainer">
+                <iframe class="Video" src="Videos/GradworkVideo.mp4"></iframe>
+            </div>
+
+            <div class="TextContainer">
+                <h4>The project</h4>
+                <p>
+                    As part of our education at Digital Arts and Entertainment, we all do a <b>graduation work involving research</b>, making a project based on that research, and <b>writing a paper</b>
+                    about the whole process. I chose the topic "forest fire simulation", which was in cooperation with the University of Leuven. I chose to follow the needs and desires from KU Leuven as closely
+                    as possible, although this was not required; they could give topics, but were not clients.
+                </p>
+                <p>
+                    While the topic was indeed <b>wildfire simulation</b>, the actual goal was to <b>visualize a simplified version of the electric signals going over the heart</b>. As such, I made it my primary goal to make a system
+                    that would allow me to correctly show wave propagation on a 3D model.
+                </p>
+
+                <h4>Research</h4>
+                <p>
+                    I started my <b>research</b> very broad, looking at recent wildfires and gathering some general information. After that, I started looking into the <b>workings of a wildfire</b>; what causes them to gain or loose speed,
+                    what kind of wildfires are there etc. Of course, since I needed to combine this with the human heart, I also briefly looked into the <b>workings of the heart</b>. With the resources provided by KU Leuven, I
+                    was able to filter out what I would need for this project.
+                </p>
+
+                <h4>Simulator</h4>
+
+                <h5>Grid</h5>
+                <p>
+                    The first step was to generate a <b>grid</b> large enough to encapsulate the entire mesh, but <b>small enough to not cause unnessecary calculation</b>. This also meant it would need to be hollow - the inside of
+                    a mesh should not have any wave propagation going on.<br />
+                    The spawning of the grids was made so the user can <b>choose how many cells there are</b>.
+                </p>
+
+                <img class="ProjectImage" src="Images/Gradwork_Code0.png" alt="Gradwork Code snippet 0" />
+
+                <h5>Transform: trees and fire</h5>
+                <p>
+                    Another difficulty was the transform the trees and fire VFX should have. "Up" wasn't positive Z anymore, and taking the center of a cell did not guarantee it would be anywhere near the terrain surface.
+                    I ended up doing <b>linetraces</b> for every edge of the cell and taking an <b>average from all the impact normals and positions</b>. This worked decently well for most geometry and was fast enough to be useble
+                    for grid generation.
+                </p>
+
+                <img class="ProjectImage" src="Images/Gradwork_Code1.png" alt="Gradwork Code snippet 1" />
+
+                <h4>Paper</h4>
+                <p>
+                    We needed to write a paper <b>documenting our research and the making of the project</b> . I also ran <b>tests, looking at fps in various scenarios</b>, and discussed the results.
+                </p>
+            </div>
+        </div>
+
+        <div class="ProjectImageContainerFlex">
+            <div class="ProjectImageContainer">
+                <img class="ProjectImage" src="Images/Gradwork_0.png" alt="Gradwork Screenshot 0" />
+                <img class="ProjectImage" src="Images/Gradwork_1.png" alt="Gradwork Screenshot 1" />
+                <img class="ProjectImage" src="Images/Gradwork_2.png" alt="Gradwork Screenshot 2" />
+                <img class="ProjectImage" src="Images/Gradwork_3.jpg" alt="Gradwork Screenshot 3" />
+                <img class="ProjectImage" src="Images/Gradwork_4.png" alt="Gradwork Screenshot 4" />
+
+            </div>
+        </div>
+
+
+        <div class="VideoContainer">
+            <iframe src="Documents/WildfireSimulator_Paper.pdf" class="PdfViewer"></iframe>
+        </div>
+
+
+        <div class="ProjectInfoContainer">
+            <div class="TextContainer">
+                <h4>Links</h4>
+                <p>
+                    The <a href="https://github.com/JudithVerdonckJV/WildfireSim/tree/master" target="_blank">Github</a> repository of the project.<br />
+                </p>
+            </div>
+        </div>
+
+    </div>
+
+        <script src="PortfolioScript.js"></script>
+</body>
+</html>
