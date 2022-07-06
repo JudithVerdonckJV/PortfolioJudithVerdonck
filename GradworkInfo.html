@@ -30,6 +30,7 @@
                 <h4>The project</h4>
                 <p>
                     As part of our education at Digital Arts and Entertainment, we all do a <b>graduation work involving research</b>, making a project based on that research, and <b>writing a paper</b>
+<<<<<<< HEAD
                     about the whole process. <br />
                     I chose the topic "forest fire simulation", which was in cooperation with the University of Leuven. I chose to follow the needs and desires from KU Leuven as closely
                     as possible, although this was not required; they could give gradwork topics, but were not clients.
@@ -37,11 +38,23 @@
                 <p>
                     While the topic was indeed <b>wildfire simulation</b>, the actual goal was to <b>visualize a simplified version of the electric signals going over the heart</b>. As such, I made it my primary goal to make a system
                     that would allow me to correctly show <b>wave propagation on a 3D model</b>.
+=======
+                    about the whole process. I chose the topic "forest fire simulation", which was in cooperation with the University of Leuven. I chose to follow the needs and desires from KU Leuven as closely
+                    as possible, although this was not required; they could give topics, but were not clients.
+                </p>
+                <p>
+                    While the topic was indeed <b>wildfire simulation</b>, the actual goal was to <b>visualize a simplified version of the electric signals going over the heart</b>. As such, I made it my primary goal to make a system
+                    that would allow me to correctly show wave propagation on a 3D model.
+>>>>>>> 1cbb2dcc10b036127549ea8316a84778db20ccc7
                 </p>
 
                 <h4>Research</h4>
                 <p>
+<<<<<<< HEAD
                     I started my research very broad, looking at recent wildfires and gathering some general information. After that, I started looking into the <b>workings of a wildfire</b>; what causes them to gain or loose speed,
+=======
+                    I started my <b>research</b> very broad, looking at recent wildfires and gathering some general information. After that, I started looking into the <b>workings of a wildfire</b>; what causes them to gain or loose speed,
+>>>>>>> 1cbb2dcc10b036127549ea8316a84778db20ccc7
                     what kind of wildfires are there etc. Of course, since I needed to combine this with the human heart, I also briefly looked into the <b>workings of the heart</b>. With the resources provided by KU Leuven, I
                     was able to filter out what I would need for this project.
                 </p>
@@ -55,6 +68,7 @@
                     The spawning of the grids was made so the user can <b>choose how many cells there are</b>.
                 </p>
 
+<<<<<<< HEAD
                 <img class="InTextImage" src="Images/Gradwork_Code0.png" alt="Gradwork Code snippet 0" />
 
                 <h5>Transform: trees and fire</h5>
@@ -69,6 +83,22 @@
                 <h4>Paper</h4>
                 <p>
                     We needed to write a paper <b>documenting our research and the making of the project</b>. I also ran <b>tests, looking at fps in various scenarios</b>, and discussed the results.
+=======
+                <img class="ProjectImage" src="Images/Gradwork_Code0.png" alt="Gradwork Code snippet 0" />
+
+                <h5>Transform: trees and fire</h5>
+                <p>
+                    Another difficulty was the transform the trees and fire VFX should have. "Up" wasn't positive Z anymore, and taking the center of a cell did not guarantee it would be anywhere near the terrain surface.
+                    I ended up doing <b>linetraces</b> for every edge of the cell and taking an <b>average from all the impact normals and positions</b>. This worked decently well for most geometry and was fast enough to be useble
+                    for grid generation.
+                </p>
+
+                <img class="ProjectImage" src="Images/Gradwork_Code1.png" alt="Gradwork Code snippet 1" />
+
+                <h4>Paper</h4>
+                <p>
+                    We needed to write a paper <b>documenting our research and the making of the project</b> . I also ran <b>tests, looking at fps in various scenarios</b>, and discussed the results.
+>>>>>>> 1cbb2dcc10b036127549ea8316a84778db20ccc7
                 </p>
             </div>
         </div>
