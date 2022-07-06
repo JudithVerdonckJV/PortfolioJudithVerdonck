@@ -48,7 +48,7 @@ h5 {
     color: rgb(20, 20, 20);
     font-size: 1.2em;
     text-align: left;
-    margin: 0;
+    margin: 15px 0px -10px 0px;
     padding: 0;
 }
 
@@ -142,6 +142,14 @@ ul {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
+.UnstretchedImage {
+    float: left;
+    margin-right: 20px;
+    border-radius: 8px;
+    width: 40%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
 .IntroImage {
     float: left;
     margin-right: 20px;
@@ -162,6 +170,8 @@ ul {
 .EngineLogo {
     float: right;
     width: 5%;
+    min-width: 65px;
+    margin-left: 8px;
 }
 
 
@@ -191,6 +201,12 @@ ul {
     width: 100%;
     margin-bottom: 20px;
     transition: transform .2s;
+}
+
+.InTextImage {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    width: 100%;
+    margin-bottom: 20px;
 }
 
 .ProjectImage:hover {

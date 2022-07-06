@@ -18,6 +18,9 @@ function HandleStickyRibbon() {
 var WIPInfo = document.getElementById("WIP");
 if (WIPInfo != null) WIPInfo.onclick = OpenWIPInfo;
 
+var GaMInfo = document.getElementById("GaM");
+if (GaMInfo != null) GaMInfo.onclick = Open2GaMInfo;
+
 var GradInfo = document.getElementById("Gradwork");
 if (GradInfo != null) GradInfo.onclick = OpenGradworkInfo;
 
@@ -41,6 +44,10 @@ if (ArtInfo != null) ArtInfo.onclick = Open3dInfo;
 
 function OpenWIPInfo() {
     window.open("WIPInfo.html", "_self");
+}
+
+function Open2GaMInfo() {
+    window.open("2GaMInfo.html", "_self");
 }
 
 function OpenGradworkInfo() {
